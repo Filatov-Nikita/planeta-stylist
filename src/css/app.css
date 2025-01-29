@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@import './base.css';
+
+@theme {
+  --color-*: initial;
+  --color-primary: #CAD411;
+  --color-dark: #202020;
+  --color-accent: #ABB310;
+  --color-white: #FFFFFF;
+  --color-gray-300: #D4D4D4;
+  --color-gray-500: #DADADA;
+  --font-druk: 'druk', 'sans-serif';
+  --font-unbounded: 'unbounded', 'sans-serif';
+}

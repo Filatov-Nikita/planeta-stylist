@@ -1,0 +1,9 @@
+@layer base {
+  body {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--font-unbounded);
+    color: var(--color-white);
+    background-color: var(--color-dark);
+  }
+}
