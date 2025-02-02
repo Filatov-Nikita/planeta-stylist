@@ -16,7 +16,7 @@
           <p class="section-main__text">
             Главный приз – обучение в style community school
           </p>
-          <Button tag="a" href="https//ya.ru" target="_blank">Принять участие</Button>
+          <Button tag="a" :href="config.formHref" target="_blank">Принять участие</Button>
         </div>
         <img class="woman" width="1026" height="1074" src="@/assets/images/woman.png" alt="woman">
       </div>
@@ -27,6 +27,9 @@
 <script setup>
   import Header from '../Blocks/Header.vue';
   import Button from '../Base/Button.vue';
+  import useConfig from '@/composables/useConfig';
+
+  const config = useConfig();
 </script>
 
 <style scoped lang="scss">

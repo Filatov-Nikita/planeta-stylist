@@ -21,7 +21,7 @@
             <p class="section-gifts__text">Призы от брендов-партнеров</p>
           </div>
         </div>
-        <Button class="section-gifts__action">Хочу участвовать</Button>
+        <Button class="section-gifts__action" tag="a" :href="config.formHref" target="_blank">Хочу участвовать</Button>
       </div>
       <img class="woman" width="884" height="1218" src="@/assets/images/woman2.png" alt="woman">
     </div>
@@ -30,6 +30,9 @@
 
 <script setup>
   import Button from '@/components/Base/Button.vue';
+  import useConfig from '@/composables/useConfig';
+
+  const config = useConfig();
 </script>
 
 <style scoped lang="scss">

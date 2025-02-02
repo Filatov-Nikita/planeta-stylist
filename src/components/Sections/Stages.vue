@@ -36,7 +36,7 @@
             <p>Подготовка к&nbsp;финальному этапу будет проходить с&nbsp;1 по 11&nbsp;апреля. Финалисты готовят образы для модного показа в&nbsp;рамках одной концепции по&nbsp;заданию жюри.</p>
             <p>Финал состоится 12&nbsp;апреля в&nbsp;ТРЦ&nbsp;«Планета».</p>
           </ContentItem>
-          <Button class="section-stages__action" tag="a" color="primary" href="#" target="_blank">Принять участие</Button>
+          <Button class="section-stages__action" tag="a" color="primary" :href="config.formHref" target="_blank">Принять участие</Button>
         </div>
       </div>
     </div>
@@ -46,6 +46,9 @@
 <script setup>
   import Button from '@/components/Base/Button.vue';
   import ContentItem from '@/components/Stages/ContentItem.vue';
+  import useConfig from '@/composables/useConfig';
+
+  const config = useConfig();
 </script>
 
 <style scoped lang="scss">
