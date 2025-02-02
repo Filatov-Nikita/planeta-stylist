@@ -49,6 +49,16 @@
       line-height: 1.2;
       color: var(--color-gray-500);
 
+      @include sm {
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+
+      @include xs {
+        font-size: 16px;
+      }
+
       &:hover {
         color: var(--color-accent);
       }
@@ -62,6 +72,14 @@
       padding-bottom: 20px;
       font-weight: 300;
       color: var(--color-gray-500);
+
+      @include sm {
+        font-size: 16px;
+      }
+
+      @include xs {
+        font-size: 14px;
+      }
     }
 
     &__icon-wrap {
