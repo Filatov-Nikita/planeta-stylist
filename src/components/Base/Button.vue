@@ -1,5 +1,12 @@
 <template>
-  <component class="base-button" :is="tag">
+  <component
+    class="base-button"
+    :class="{
+      'base-button--dark': color === 'dark',
+      'base-button--primary': color === 'primary',
+    }"
+    :is="tag"
+  >
     <slot></slot>
   </component>
 </template>
@@ -9,6 +16,10 @@
     tag: {
       default: 'button',
       type: String,
+    },
+    color: {
+      default: 'dark',
+      type: String,
     }
   });
 </script>
@@ -16,12 +27,30 @@
 <style scoped lang="scss">
   .base-button {
     display: inline-block;
-    color: var(--color-primary);
     font-family: var(--font-druk);
-    background-color: var(--color-dark);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.25;
     padding: 17px 50px;
+    text-transform: uppercase;
+
+    &--dark {
+      color: var(--color-primary);
+      background-color: var(--color-dark);
+
+      &:hover {
+        color: var(--color-dark);
+        background-color: var(--color-primary);
+      }
+    }
+
+    &--primary {
+      color: var(--color-dark);
+      background-color: var(--color-primary);
+
+      &:hover {
+        background-color: var(--color-accent);
+      }
+    }
   }
 </style>

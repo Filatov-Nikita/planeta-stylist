@@ -9,10 +9,10 @@
             <span class="period__dot"></span>
             <span>12.04</span>
           </div>
-          <div class="title section-main__title">
+          <h1 class="title section-main__title">
             <span class="title__row1">Битва</span>
             <span class="title__row2">стилистов</span>
-          </div>
+          </h1>
           <p class="section-main__text">
             Главный приз – обучение в style community school
           </p>

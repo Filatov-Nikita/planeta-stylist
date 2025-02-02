@@ -5,7 +5,7 @@
         <img class="w-full" src="@/assets/images/logo.svg" alt="Логотип Планета">
       </a>
       <div class="nav">
-        <a class="nav-link" href="#">Этапы</a>
+        <a class="nav-link" href="#stages">Этапы</a>
         <a class="nav-link" href="#">Призы</a>
         <a class="nav-link" href="#">Участники</a>
         <a class="nav-link" href="#">Жюри</a>
