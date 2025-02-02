@@ -41,12 +41,17 @@
   .footer {
     padding-bottom: 40px;
 
+    @include sm {
+      padding-bottom: 30px;
+    }
+
     &__address-wrap {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      column-gap: 30px;
+      column-gap: 60px;
+      row-gap: 16px;
     }
 
     &__address {
@@ -55,6 +60,16 @@
       line-height: 1.35;
       color: var(--color-white);
 
+      @include sm {
+        width: 100%;
+        order: 1;
+        font-size: 18px;
+      }
+
+      @include xs {
+        font-size: 14px;
+      }
+
       p + p {
         margin-top: 5px;
       }
@@ -62,6 +77,10 @@
 
     &__rules-wrap {
       margin-top: 35px;
+
+      @include sm {
+        margin-top: 20px;
+      }
     }
 
     &__rules {
@@ -86,6 +105,10 @@
 
   .logo {
     width: 141px;
+
+    @include sm {
+      width: 100px;
+    }
   }
 
   .links {

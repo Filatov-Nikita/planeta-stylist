@@ -49,7 +49,7 @@
 
     @include sm {
       padding-top: 60px;
-      padding-bottom: 80px;
+      padding-bottom: 60px;
     }
 
     &__title {
