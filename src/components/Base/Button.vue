@@ -27,6 +27,7 @@
 <style scoped lang="scss">
   .base-button {
     display: inline-block;
+    cursor: pointer;
     font-family: var(--font-druk);
     font-weight: 700;
     font-size: 20px;
@@ -40,7 +41,7 @@
 
       &:hover {
         color: var(--color-dark);
-        background-color: var(--color-primary);
+        background-color: var(--color-accent);
       }
     }
 
