@@ -36,7 +36,9 @@
             <p>Подготовка к&nbsp;финальному этапу будет проходить с&nbsp;1 по 11&nbsp;апреля. Финалисты готовят образы для модного показа в&nbsp;рамках одной концепции по&nbsp;заданию жюри.</p>
             <p>Финал состоится 12&nbsp;апреля в&nbsp;ТРЦ&nbsp;«Планета».</p>
           </ContentItem>
-          <Button class="section-stages__action" tag="a" color="primary" :href="config.formHref" target="_blank">Принять участие</Button>
+          <div class="section-stages__action">
+            <Button tag="a" color="primary" :href="config.formHref" target="_blank">Принять участие</Button>
+          </div>
         </div>
       </div>
     </div>
@@ -56,6 +58,11 @@
     padding-top: 100px;
     padding-bottom: 180px;
 
+    @include sm {
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
+
     &__wrap {
       display: flex;
       flex-wrap: wrap;
@@ -65,15 +72,27 @@
     &__title {
       width: calc(100% / 12 * 5 - 30px);
       margin: 15px;
+
+      @include sm {
+        width: calc(100% - 30px);
+      }
     }
 
     &__content {
       width: calc(100% / 12 * 7 - 30px);
       margin: 15px;
+
+      @include sm {
+        width: calc(100% - 30px);
+      }
     }
 
     &__action {
       margin-top: 50px;
+
+      @include sm {
+        text-align: center;
+      }
     }
 
     &__item {
@@ -91,6 +110,22 @@
     &__row1 {
       display: block;
       font-size: 180px;
+
+      @include xl {
+        font-size: 150px;
+      }
+
+      @include md {
+        font-size: 100px;
+      }
+
+      @include sm {
+        font-size: 70px;
+      }
+
+      @include xs {
+        font-size: 40px;
+      }
     }
 
     &__row2 {
@@ -100,6 +135,22 @@
       font-size: 70px;
       text-transform: uppercase;
       letter-spacing: 0.02em;
+
+      @include xl {
+        font-size: 60px;
+      }
+
+      @include md {
+        font-size: 40px;
+      }
+
+      @include sm {
+        font-size: 32px;
+      }
+
+      @include xs {
+        font-size: 24px;
+      }
     }
 
     &__content {

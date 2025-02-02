@@ -32,6 +32,10 @@
 
 <style scoped lang="scss">
   .content-item {
+    @include sm {
+      font-size: 16px;
+    }
+
     &__header {
       padding-bottom: 14px;
       border-bottom: 1px solid var(--color-white);
@@ -45,6 +49,10 @@
       color: var(--color-accent);
       text-transform: uppercase;
       margin-bottom: 12px;
+
+      @include sm {
+        font-size: 12px;
+      }
     }
 
     &__title-wrap {
@@ -54,17 +62,29 @@
       flex-wrap: wrap;
       justify-content: space-between;
       column-gap: 30px;
-      row-gap: 10px;
+      row-gap: 12px;
+
+      @include sm {
+        font-size: 18px;
+      }
     }
 
     &__title {
       font-weight: 700;
       color: var(--color-white);
+
+      @include screen(1350px) {
+        width: 100%;
+      }
     }
 
     &__period {
       font-weight: 400;
       color: var(--color-primary);
+
+      @include sm {
+        font-size: 16px;
+      }
     }
 
     &__text {
