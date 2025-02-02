@@ -23,7 +23,7 @@
           </a>
         </div>
         <div class="footer__rules-wrap">
-          <a class="footer__rules" href="#" target="_blank">Правила проведения Конкурса</a>
+          <a class="footer__rules" href="/docs/битва_стилистов_2025.pdf" target="_blank">Правила проведения Конкурса</a>
         </div>
       </div>
     </div>
