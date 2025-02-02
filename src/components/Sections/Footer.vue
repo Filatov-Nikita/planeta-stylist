@@ -7,18 +7,18 @@
             <p>ТРЦ «Планета»</p>
             <p>г. Красноярск, ул. 9 Мая, 77</p>
           </div>
-          <a class="logo" href="/">
+          <a class="logo" href="https://krs.planeta-mall.ru/">
             <img class="w-full" width="131" height="50" src="@/assets/images/logo.svg" alt="Логотип Планета">
           </a>
         </div>
         <div class="footer__links links">
-          <a class="link" href="#" target="_blank">
+          <a class="link" href="http://vk.com/public50952130" target="_blank">
             <IconVK class="w-full h-full" />
           </a>
-          <a class="link" href="#" target="_blank">
+          <a class="link" href="https://t.me/tc_planeta" target="_blank">
             <IconTG class="w-full h-full" />
           </a>
-          <a class="link" href="#" target="_blank">
+          <a class="link" href="https://rutube.ru/channel/24664992/" target="_blank">
             <IconRutube class="w-full h-full" />
           </a>
         </div>

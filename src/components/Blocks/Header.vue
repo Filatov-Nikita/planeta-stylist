@@ -1,14 +1,14 @@
 <template>
   <header class="header">
     <div class="header__wrap">
-      <a class="logo" href="/">
+      <a class="logo" href="https://krs.planeta-mall.ru/">
         <img class="w-full" width="131" height="50" src="@/assets/images/logo.svg" alt="Логотип Планета">
       </a>
       <div class="nav">
         <a class="nav-link" href="#stages">Этапы</a>
         <a class="nav-link" href="#gifts">Призы</a>
-        <a class="nav-link" href="#">Участники</a>
-        <a class="nav-link" href="#">Жюри</a>
+        <!-- <a class="nav-link" href="#">Участники</a>
+        <a class="nav-link" href="#">Жюри</a> -->
         <a class="nav-link" href="#faq">Вопросы и ответы</a>
       </div>
     </div>
