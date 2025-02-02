@@ -9,7 +9,9 @@
       </span>
     </div>
     <SlideUpDown :active="active" :duration="300">
-      <p class="faq-item__text">{{ text }}</p>
+      <div class="faq-item__text">
+        <slot name="text"></slot>
+      </div>
     </SlideUpDown>
   </div>
 </template>
@@ -20,10 +22,6 @@
 
   defineProps({
     title: {
-      required: true,
-      type: String,
-    },
-    text: {
       required: true,
       type: String,
     },
