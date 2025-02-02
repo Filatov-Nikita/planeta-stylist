@@ -54,6 +54,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       column-gap: 30px;
+      row-gap: 10px;
     }
 
     &__title {

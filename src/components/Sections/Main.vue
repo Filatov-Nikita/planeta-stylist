@@ -43,22 +43,51 @@
       z-index: 0;
       padding-top: 35px;
       padding-bottom: 90px;
-    }
 
-    &__content {
+      @include lg {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
 
+      @include sm {
+        padding-bottom: 20px;
+      }
     }
 
     &__header {
       margin-bottom: 90px;
+
+      @include screen(990px) {
+        margin-bottom: 40px;
+      }
+
+      @include sm {
+        margin-bottom: 25px;
+      }
     }
 
     &__period {
       margin-bottom: 30px;
+
+      @include xl {
+        margin-bottom: 20px;
+      }
+
+      @include sm {
+        margin-bottom: 12px;
+      }
     }
 
     &__title {
       margin-bottom: 50px;
+
+      @include xl {
+        margin-bottom: 35px;
+      }
+
+      @include sm {
+        margin-bottom: 20px;
+      }
     }
 
     &__text {
@@ -70,6 +99,27 @@
       font-family: var(--font-druk);
       color: var(--color-white);
       margin-bottom: 55px;
+
+      @include xl {
+        font-size: 18px;
+        max-width: 320px;
+        margin-bottom: 35px;
+      }
+
+      @include md {
+        font-size: 16px;
+      }
+
+      @include sm {
+        font-size: 14px;
+        max-width: 280px;
+        margin-bottom: 20px;
+      }
+
+      @include xs {
+        font-size: 12px;
+        max-width: 200px;
+      }
     }
   }
 
@@ -82,12 +132,30 @@
     align-items: center;
     column-gap: 16px;
 
+    @include xl {
+      font-size: 24px;
+    }
+
+    @include md {
+      font-size: 20px;
+      column-gap: 12px;
+    }
+
+    @include sm {
+      font-size: 16px;
+    }
+
     &__dot {
       display: block;
       width: 15px;
       height: 15px;
       border-radius: 50%;
       background-color: var(--color-primary);
+
+      @include md {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 
@@ -99,6 +167,18 @@
     color: var(--color-primary);
     line-height: 1;
 
+    @include xl {
+      font-size: 100px;
+    }
+
+    @include md {
+      font-size: 60px;
+    }
+
+    @include xs {
+      font-size: 32px;
+    }
+
     &__row1 {
       display: block;
       text-transform: uppercase;
@@ -109,6 +189,20 @@
       padding-left: 0.08em;
       font-size: 95px;
       margin-top: -30px;
+
+      @include xl {
+        margin-top: -10px;
+        font-size: 60px;
+      }
+
+      @include md {
+        font-size: 40px;
+      }
+
+      @include xs {
+        margin-top: 0px;
+        font-size: 24px;
+      }
     }
   }
 
@@ -121,5 +215,17 @@
     max-height: 716px;
     max-width: 684px;
     z-index: -1;
+
+    @include md {
+      max-width: 380px;
+    }
+
+    @include sm {
+      max-width: 250px;
+    }
+
+    @include xs {
+      width: 53vw;
+    }
   }
 </style>

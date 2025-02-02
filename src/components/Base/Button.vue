@@ -35,6 +35,11 @@
     padding: 17px 50px;
     text-transform: uppercase;
 
+    @include md {
+      padding: 14px 30px;
+      font-size: 16px;
+    }
+
     &--dark {
       color: var(--color-primary);
       background-color: var(--color-dark);
