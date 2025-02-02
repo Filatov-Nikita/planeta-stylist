@@ -89,6 +89,8 @@
   }
 
   .title {
+    transform: translateX(-0.08em);
+    font-size: 140px;
     font-weight: 700;
     font-family: var(--font-druk);
     color: var(--color-primary);
@@ -96,12 +98,12 @@
 
     &__row1 {
       display: block;
-      font-size: 140px;
       text-transform: uppercase;
     }
 
     &__row2 {
       display: block;
+      padding-left: 0.08em;
       font-size: 95px;
       margin-top: -30px;
     }
