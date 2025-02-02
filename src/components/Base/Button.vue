@@ -34,6 +34,7 @@
     line-height: 1.25;
     padding: 17px 50px;
     text-transform: uppercase;
+    text-align: center;
 
     @include md {
       padding: 14px 30px;

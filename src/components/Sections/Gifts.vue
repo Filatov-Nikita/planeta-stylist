@@ -44,6 +44,15 @@
     &__wrap {
       padding-top: 60px;
       padding-bottom: 80px;
+
+      @include md {
+        padding-top: 30px;
+        padding-bottom: 40px;
+      }
+
+      @include xs {
+        padding-bottom: 30px;
+      }
     }
 
     &__title {
@@ -56,10 +65,27 @@
       line-height: 1.4;
       letter-spacing: 0.02em;
       margin-bottom: 40px;
+
+      @include md {
+        font-size: 50px;
+      }
+
+      @include sm {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
     }
 
     &__action {
       margin-top: 50px;
+
+      @include sm {
+        margin-top: 40px;
+      }
+
+      @include xs {
+        margin-top: 30px;
+      }
     }
 
     &__content {
@@ -72,10 +98,27 @@
 
     &__row2 {
       margin-bottom: 20px;
+
+      @include md {
+        max-width: 380px;
+      }
+
+      @include sm {
+        max-width: 280px;
+      }
     }
 
     &__row3 {
       margin-bottom: 45px;
+
+      @include md {
+        max-width: 380px;
+      }
+
+      @include sm {
+        max-width: 280px;
+        margin-bottom: 24px;
+      }
     }
 
     &__row2 &__text,  &__row3 &__text {
@@ -92,6 +135,14 @@
       font-size: 22px;
       line-height: 1.6;
       text-transform: uppercase;
+
+      @include lg {
+        font-size: 18px;
+      }
+
+      @include sm {
+        font-size: 14px;
+      }
     }
 
     &__text-large {
@@ -102,11 +153,39 @@
       text-transform: uppercase;
       max-width: 760px;
       margin-top: 10px;
+
+      @include xl {
+        max-width: 620px;
+        font-size: 32px;
+      }
+
+      @include md {
+        font-size: 24px;
+        max-width: 480px;
+      }
+
+      @include sm {
+        font-size: 20px;
+        max-width: 380px;
+      }
+
+      @include xs {
+        font-size: 16px;
+        max-width: 320px;
+      }
     }
 
     &__text {
       font-size: 22px;
       line-height: 1.5;
+
+      @include lg {
+        font-size: 18px;
+      }
+
+      @include sm {
+        font-size: 14px;
+      }
     }
   }
 
@@ -114,8 +193,22 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: auto;
-    height: 90%;
+    width: 40vw;
+    height: auto;
+    max-width: 589px;
+    max-height: 812px;
     z-index: -1;
+
+    @include md {
+      width: 50vw;
+    }
+
+    @include sm {
+      width: 40vw;
+    }
+
+    @include screen(365px) {
+      display: none;
+    }
   }
 </style>
