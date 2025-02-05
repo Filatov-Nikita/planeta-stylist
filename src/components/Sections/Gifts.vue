@@ -10,15 +10,16 @@
           </div>
           <div class="section-gifts__row2">
             <p class="section-gifts__label">2 Место</p>
-            <p class="section-gifts__text">Подарочные карты «Планета» на&nbsp;сумму 70&nbsp;000&nbsp;₽</p>
+            <p class="section-gifts__text">Подарочная карта «Планета» на&nbsp;сумму 70&nbsp;000&nbsp;₽</p>
           </div>
           <div class="section-gifts__row3">
             <p class="section-gifts__label">3 Место</p>
-            <p class="section-gifts__text">Подарочные карты «Планета» на&nbsp;сумму 30&nbsp;000&nbsp;₽</p>
+            <p class="section-gifts__text">Подарочная карта «Планета» на&nbsp;сумму 30&nbsp;000&nbsp;₽</p>
           </div>
           <div class="section-gifts__row4">
-            <p class="section-gifts__text">Приз зрительских симпатий</p>
-            <p class="section-gifts__text">Призы от брендов-партнеров</p>
+            <p class="section-gifts__text section-gifts__text--accent">Приз зрительских симпатий</p>
+            <p class="section-gifts__text section-gifts__text--accent">Призы от брендов-партнеров</p>
+            <p class="section-gifts__caption">Подарочные сертификаты на&nbsp;сумму от&nbsp;10&nbsp;000 ₽</p>
           </div>
         </div>
         <Button class="section-gifts__action" tag="a" :href="config.formHref" target="_blank">Хочу участвовать</Button>
@@ -97,7 +98,7 @@
     }
 
     &__row2 {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
 
       @include md {
         max-width: 380px;
@@ -105,6 +106,7 @@
 
       @include sm {
         max-width: 280px;
+        margin-bottom: 20px;
       }
     }
 
@@ -126,7 +128,7 @@
     }
 
     &__row4 &__text + &__text {
-      margin-top: 12px;
+      margin-top: 16px;
     }
 
     &__label {
@@ -141,7 +143,7 @@
       }
 
       @include sm {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
@@ -179,12 +181,34 @@
       font-size: 22px;
       line-height: 1.5;
 
+      &--accent {
+        font-weight: 700;
+      }
+
       @include lg {
         font-size: 18px;
       }
 
       @include sm {
         font-size: 14px;
+      }
+    }
+
+    &__caption {
+      margin-top: 6px;
+      font-size: 16px;
+      line-height: 1.5;
+      padding-left: 24px;
+
+      @include lg {
+        font-size: 16px;
+        padding-left: 20px;
+      }
+
+      @include sm {
+        max-width: 280px;
+        font-size: 12px;
+        padding-left: 16px;
       }
     }
   }
@@ -204,7 +228,7 @@
     }
 
     @include sm {
-      width: 40vw;
+      width: 33vw;
     }
 
     @include screen(365px) {
