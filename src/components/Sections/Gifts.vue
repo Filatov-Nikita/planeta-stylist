@@ -2,7 +2,7 @@
   <section id="gifts" class="section-gifts">
     <div class="wrapper relative">
       <div class="section-gifts__wrap">
-        <h2 class="section-gifts__title">Призы</h2>
+        <h2 class="h2 h2--dark section-gifts__title">Призы</h2>
         <div class="section-gifts__content">
           <div class="section-gifts__row1">
             <p class="section-gifts__label">1 Место</p>
@@ -57,22 +57,9 @@
     }
 
     &__title {
-      text-transform: uppercase;
-      color: var(--color-dark);
-      font-family: var(--font-druk);
-      text-align: center;
-      font-weight: 700;
-      font-size: 70px;
-      line-height: 1.4;
-      letter-spacing: 0.02em;
       margin-bottom: 40px;
 
-      @include md {
-        font-size: 50px;
-      }
-
       @include sm {
-        font-size: 32px;
         margin-bottom: 30px;
       }
     }

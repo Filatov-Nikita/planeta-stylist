@@ -1,0 +1,35 @@
+@use '../mixins/screens.scss' as *;
+
+.h2 {
+  text-transform: uppercase;
+  font-family: var(--font-druk);
+  text-align: center;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
+  @include xl {
+    font-size: 60px;
+  }
+
+  @include lg {
+    font-size: 50px;
+  }
+
+  @include md {
+    font-size: 40px;
+  }
+
+  @include sm {
+    font-size: 32px;
+  }
+
+  &--primary {
+    color: var(--color-primary);
+  }
+
+  &--dark {
+    color: var(--color-dark);
+  }
+}

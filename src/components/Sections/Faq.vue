@@ -1,7 +1,7 @@
 <template>
   <section id="faq" class="section-faq">
     <div class="wrapper">
-      <h2 class="section-faq__title">Вопросы-ответы</h2>
+      <h2 class="h2 h2--primary section-faq__title">Вопросы-ответы</h2>
       <div class="section-faq__list">
         <ListItem title="Какие призы можно выиграть в Конкурсе?">
           <template #text>
@@ -73,31 +73,7 @@
     }
 
     &__title {
-      text-transform: uppercase;
-      color: var(--color-primary);
-      font-family: var(--font-druk);
-      text-align: center;
-      font-weight: 700;
-      font-size: 70px;
-      line-height: 1.4;
-      letter-spacing: 0.02em;
       margin-bottom: 20px;
-
-      @include xl {
-        font-size: 60px;
-      }
-
-      @include lg {
-        font-size: 50px;
-      }
-
-      @include md {
-        font-size: 40px;
-      }
-
-      @include sm {
-        font-size: 32px;
-      }
     }
 
     &__list {
