@@ -1,5 +1,5 @@
 <template>
-  <div class="auditors-list">
+  <div class="auditors-list" v-if="grid.md">
     <ListItem
       class="auditors-list__item"
       v-for="item in items"
@@ -8,6 +8,20 @@
       v-bind="item"
     />
   </div>
+  <Swiper
+    v-else
+    :spaceBetween="20"
+  >
+    <SwiperSlide
+      v-for="item in items"
+    >
+      <ListItem
+        photoWidth="920"
+        photoHeight="1160"
+        v-bind="item"
+      />
+    </SwiperSlide>
+  </Swiper>
 </template>
 
 <script setup>
@@ -17,7 +31,9 @@
   import Img2 from '@/assets/images/auditors/2.jpg';
   import Img3 from '@/assets/images/auditors/3.jpg';
   import Img4 from '@/assets/images/auditors/4.jpg';
+  import useGrid from '@/composables/useGrid';
 
+  const grid = useGrid();
 
   const items = ref([
     {
