@@ -50,7 +50,7 @@
       }
 
       @include sm {
-        padding-bottom: 20px;
+        padding-bottom: 0px;
       }
     }
 
@@ -62,7 +62,7 @@
       }
 
       @include sm {
-        margin-bottom: 25px;
+        margin-bottom: 32px;
       }
     }
 
@@ -74,7 +74,7 @@
       }
 
       @include sm {
-        margin-bottom: 12px;
+        margin-bottom: 15px;
       }
     }
 
@@ -111,14 +111,8 @@
       }
 
       @include sm {
-        font-size: 14px;
-        max-width: 280px;
-        margin-bottom: 20px;
-      }
-
-      @include xs {
-        font-size: 12px;
-        max-width: 200px;
+        max-width: 295px;
+        margin-bottom: 24px;
       }
     }
   }
@@ -172,11 +166,11 @@
     }
 
     @include md {
-      font-size: 60px;
+      font-size: 70px;
     }
 
     @include xs {
-      font-size: 32px;
+      font-size: 50px;
     }
 
     &__row1 {
@@ -196,12 +190,12 @@
       }
 
       @include md {
-        font-size: 40px;
+        font-size: 47px;
       }
 
       @include xs {
         margin-top: 0px;
-        font-size: 24px;
+        font-size: 34px;
       }
     }
   }
@@ -221,11 +215,13 @@
     }
 
     @include sm {
-      max-width: 250px;
-    }
-
-    @include xs {
-      width: 53vw;
+      margin-top: 30px;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-height: none;
+      position: static;
     }
   }
 </style>
