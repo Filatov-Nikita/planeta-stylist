@@ -214,11 +214,7 @@
       width: 50vw;
     }
 
-    @include sm {
-      width: 33vw;
-    }
-
-    @include screen(365px) {
+    @include xs {
       display: none;
     }
   }
