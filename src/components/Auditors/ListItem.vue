@@ -1,8 +1,9 @@
 <template>
   <div
     class="auditor-item"
-    @mouseenter="showed = true"
-    @mouseleave="showed = false"
+    @mouseenter="screen.touch ? null : showed = true"
+    @mouseleave="screen.touch ? null : showed = false"
+    @click="screen.touch ? showed = !showed : null"
   >
     <div class="auditor-item__img-wrap">
       <img :width="photoWidth" :height="photoHeight" :src="photoSrc" :alt="name" loading="lazy" />
@@ -25,6 +26,7 @@
 </template>
 
 <script setup>
+  import { useScreen } from 'vue-screen';
   import { ref } from 'vue';
 
   defineProps({
@@ -55,6 +57,7 @@
   });
 
   const showed = ref(false);
+  const screen = useScreen();
 </script>
 
 <style scoped lang="scss">
