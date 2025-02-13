@@ -13,8 +13,7 @@
       <div class="nav">
         <a class="nav-link" href="#stages">Этапы</a>
         <a class="nav-link" href="#gifts">Призы</a>
-        <!-- <a class="nav-link" href="#">Участники</a>
-        -->
+        <a class="nav-link" href="#members">Участники</a>
         <a class="nav-link" href="#auditors">Жюри</a>
         <a class="nav-link" href="#faq">Вопросы и ответы</a>
       </div>

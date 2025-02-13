@@ -16,12 +16,12 @@
               <div class="nav-wrap" @click="$emit('close')">
                 <a class="nav-link" href="#gifts">Призы</a>
               </div>
-              <!-- <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#">Участники</a>
+              <div class="nav-wrap" @click="$emit('close')">
+                <a class="nav-link" href="#members">Участники</a>
               </div>
               <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#">Жюри</a>
-              </div> -->
+                <a class="nav-link" href="#auditors">Жюри</a>
+              </div>
               <div class="nav-wrap" @click="$emit('close')">
                 <a class="nav-link" href="#faq">Вопросы и ответы</a>
               </div>
