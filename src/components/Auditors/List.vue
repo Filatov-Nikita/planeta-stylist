@@ -11,7 +11,7 @@
   <Swiper
     v-else
     :spaceBetween="20"
-    :slidesPerView="1.12"
+    :slidesPerView="1.25"
   >
     <SwiperSlide
       v-for="item in items"
