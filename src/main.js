@@ -5,6 +5,7 @@ import './css/styles.scss';
 import './css/app.css';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
+import 'animate.css';
 
 const app = createApp(App);
 
