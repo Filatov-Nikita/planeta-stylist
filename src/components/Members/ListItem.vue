@@ -1,7 +1,7 @@
 <template>
   <article class="member-item" @click="showed = true">
     <div class="member-item__img-wrap">
-      <img class="member-item__photo" width="446" height="670" :src="item.photo" loading="lazy" />
+      <img class="member-item__photo" width="669" height="1005" :src="item.photo" loading="lazy" />
     </div>
     <h3 class="member-item__name">{{ item.name }}</h3>
   </article>

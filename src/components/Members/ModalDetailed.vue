@@ -28,10 +28,10 @@
               v-for="(image, index) in item.images"
               :key="`images${index}`"
             >
-              <img width="446" height="670" :src="image" />
+              <img width="669" height="1005" :src="image" />
             </SwiperSlide>
             <SwiperSlide key="video">
-              <img width="446" height="670" :src="item.photo" />
+              <video :src="item.video" controls></video>
             </SwiperSlide>
           </Swiper>
         </div>
