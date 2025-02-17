@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="arrows">
-      <button class="btn-nav btn-nav--left">
+      <button class="list-btn-nav list-btn-nav--left">
         <IconArrowLeft class="fill-current" />
       </button>
-      <button class="btn-nav btn-nav--right">
+      <button class="list-btn-nav list-btn-nav--right">
         <IconArrowRight class="fill-current" />
       </button>
     </div>
@@ -13,9 +13,9 @@
       :spaceBetween="20"
       :modules="[ Navigation ]"
       :navigation="{
-        disabledClass: 'btn-nav--disabled',
-        prevEl: '.btn-nav--left',
-        nextEl: '.btn-nav--right',
+        disabledClass: 'list-btn-nav--disabled',
+        prevEl: '.list-btn-nav--left',
+        nextEl: '.list-btn-nav--right',
       }"
       :breakpoints="{
         701: {
@@ -64,7 +64,7 @@
     }
   }
 
-  .btn-nav {
+  .list-btn-nav {
     cursor: pointer;
     user-select: none;
     width: 46px;
