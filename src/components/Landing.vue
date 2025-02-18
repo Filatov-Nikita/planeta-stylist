@@ -3,6 +3,7 @@
   <Stages />
   <Gifts />
   <Members />
+  <Partners />
   <Auditors />
   <Faq />
   <Footer />
@@ -15,5 +16,6 @@
   import Auditors from './Sections/Auditors.vue';
   import Members from './Sections/Members.vue';
   import Faq from './Sections/Faq.vue';
+  import Partners from './Sections/Partners.vue';
   import Footer from './Sections/Footer.vue';
 </script>

@@ -20,6 +20,9 @@
                 <a class="nav-link" href="#members">Участники</a>
               </div>
               <div class="nav-wrap" @click="$emit('close')">
+                <a class="nav-link" href="#partners">Партнеры</a>
+              </div>
+              <div class="nav-wrap" @click="$emit('close')">
                 <a class="nav-link" href="#auditors">Жюри</a>
               </div>
               <div class="nav-wrap" @click="$emit('close')">
