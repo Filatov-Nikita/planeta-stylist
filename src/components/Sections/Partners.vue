@@ -74,25 +74,25 @@
   import { Autoplay } from 'swiper/modules';
 
   const items1 = [
-    '/images/partners/row1/1_brusnika.svg',
-    '/images/partners/row1/2_ICHE.svg',
-    '/images/partners/row1/3_m.reason.svg',
-    '/images/partners/row1/4_glvr.svg',
-    '/images/partners/row1/5_alexander bogdanov.svg',
-    '/images/partners/row1/6_kira plastinina.svg',
-    '/images/partners/row1/7_стокманн.svg',
-    '/images/partners/row1/8_armani exchange.svg',
+    '/images/partners/row1/1_brusnika.svg?v=1',
+    '/images/partners/row1/2_ICHE.svg?v=1',
+    '/images/partners/row1/3_m.reason.svg?v=1',
+    '/images/partners/row1/4_glvr.svg?v=1',
+    '/images/partners/row1/5_alexander bogdanov.svg?v=1',
+    '/images/partners/row1/6_kira plastinina.svg?v=1',
+    '/images/partners/row1/7_стокманн.svg?v=1',
+    '/images/partners/row1/8_armani exchange.svg?v=1',
   ];
 
   const items2 = [
-    '/images/partners/row2/1_guess.svg',
-    '/images/partners/row2/2_benetton.svg',
-    '/images/partners/row2/3_mollis.svg',
-    '/images/partners/row2/4_tom tailor.svg',
-    '/images/partners/row2/5_Vassa&CO.svg',
-    '/images/partners/row2/6_индустрия.svg',
-    '/images/partners/row2/7_charuel.svg',
-    '/images/partners/row2/8_glassman.svg',
+    '/images/partners/row2/1_guess.svg?v=1',
+    '/images/partners/row2/2_benetton.svg?v=1',
+    '/images/partners/row2/3_mollis.svg?v=1',
+    '/images/partners/row2/4_tom tailor.svg?v=1',
+    '/images/partners/row2/5_Vassa&CO.svg?v=1',
+    '/images/partners/row2/6_индустрия.svg?v=1',
+    '/images/partners/row2/7_charuel.svg?v=1',
+    '/images/partners/row2/8_glassman.svg?v=1',
   ];
 </script>
 
