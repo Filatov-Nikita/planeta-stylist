@@ -124,7 +124,7 @@
   .text {
     margin-top: 16px;
     color: var(--color-white);
-    font-weight: 300;
+    font-weight: 200;
     font-size: 18px;
     line-height: 1.5;
 

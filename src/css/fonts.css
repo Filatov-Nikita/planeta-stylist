@@ -8,6 +8,14 @@
 
 @font-face {
   font-family: unbounded;
+  font-weight: 200;
+  src:
+    url('/fonts/unbounded/Unbounded-ExtraLight.woff2') format('woff2'),
+    url('/fonts/unbounded/Unbounded-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: unbounded;
   font-weight: 300;
   src:
     url('/fonts/unbounded/Unbounded-Light.woff2') format('woff2'),
