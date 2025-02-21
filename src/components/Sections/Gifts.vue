@@ -4,19 +4,19 @@
       <div class="section-gifts__wrap">
         <h2 class="h2 h2--dark section-gifts__title">Призы</h2>
         <div class="section-gifts__content">
-          <div class="section-gifts__row1">
+          <div class="section-gifts__row1" ref="row1Ref" :class="{ 'row-animated-start': !animted1, 'row-animated-active': animted1 }">
             <p class="section-gifts__label">1 Место</p>
             <p class="section-gifts__text-large">Сертификат на&nbsp;обучение в&nbsp;школе стилистов на&nbsp;150&nbsp;000&nbsp;₽</p>
           </div>
-          <div class="section-gifts__row2">
+          <div class="section-gifts__row2" ref="row2Ref" :class="{ 'row-animated-start': !animted2, 'row-animated-active': animted2 }">
             <p class="section-gifts__label">2 Место</p>
             <p class="section-gifts__text">Подарочная карта «Планета» на&nbsp;сумму 70&nbsp;000&nbsp;₽</p>
           </div>
-          <div class="section-gifts__row3">
+          <div class="section-gifts__row3" ref="row3Ref" :class="{ 'row-animated-start': !animted3, 'row-animated-active': animted3 }">
             <p class="section-gifts__label">3 Место</p>
             <p class="section-gifts__text">Подарочная карта «Планета» на&nbsp;сумму 30&nbsp;000&nbsp;₽</p>
           </div>
-          <div class="section-gifts__row4">
+          <div class="section-gifts__row4" ref="row4Ref" :class="{ 'row-animated-start': !animted4, 'row-animated-active': animted4 }">
             <p class="section-gifts__text section-gifts__text--accent">Приз зрительских симпатий</p>
             <p class="section-gifts__text section-gifts__text--accent">Призы от брендов-партнеров</p>
             <p class="section-gifts__caption">Подарочные сертификаты на&nbsp;сумму от&nbsp;10&nbsp;000 ₽</p>
@@ -32,11 +32,61 @@
 <script setup>
   import Button from '@/components/Base/Button.vue';
   import useConfig from '@/composables/useConfig';
+  import useIntersect from '@/composables/useIntersect';
+  import { ref } from 'vue';
 
   const config = useConfig();
+
+  const row1Ref = ref(null);
+  const row2Ref = ref(null);
+  const row3Ref = ref(null);
+  const row4Ref = ref(null);
+  const animted1 = ref(false);
+  const animted2 = ref(false);
+  const animted3 = ref(false);
+  const animted4 = ref(false);
+
+  useIntersect(
+    row1Ref,
+    () => animted1.value = true,
+    () => {},
+    { threshold: 1, once: true }
+  );
+
+  useIntersect(
+    row2Ref,
+    () => animted2.value = true,
+    () => {},
+    { threshold: 1, once: true }
+  );
+
+  useIntersect(
+    row3Ref,
+    () => animted3.value = true,
+    () => {},
+    { threshold: 1, once: true }
+  );
+
+  useIntersect(
+    row4Ref,
+    () => animted4.value = true,
+    () => {},
+    { threshold: 1, once: true }
+  );
 </script>
 
 <style scoped lang="scss">
+  .row-animated {
+    &-start {
+      opacity: 0;
+    }
+
+    &-active {
+      animation-name: lightSpeedInLeft;
+      animation-duration: 1s;
+    }
+  }
+
   .section-gifts {
     background-color: var(--color-primary);
     position: relative;
