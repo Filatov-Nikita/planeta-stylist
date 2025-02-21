@@ -4,19 +4,25 @@
       <div class="section-main__wrap">
         <Header class="section-main__header" />
         <div class="section-main__content">
-          <div class="section-main__period period">
-            <span>3.02</span>
-            <span class="period__dot"></span>
-            <span>12.04</span>
-          </div>
-          <h1 class="title section-main__title">
-            <span class="title__row1">Битва</span>
-            <span class="title__row2">стилистов</span>
-          </h1>
+          <Transition appear name="period-anim">
+            <div class="section-main__period period">
+              <span>3.02</span>
+              <span class="period__dot"></span>
+              <span>12.04</span>
+            </div>
+          </Transition>
+          <Transition appear name="title-anim">
+            <h1 class="title section-main__title">
+              <span class="title__row1">Битва</span>
+              <span class="title__row2">стилистов</span>
+            </h1>
+          </Transition>
           <p class="section-main__text">
             Главный приз – обучение в style community school
           </p>
-          <Button tag="a" :href="config.formHref" target="_blank">Принять участие</Button>
+          <Transition appear name="btn-anim">
+            <Button tag="a" :href="config.formHref" target="_blank">Принять участие</Button>
+          </Transition>
         </div>
         <img class="woman" width="1026" height="1074" src="@/assets/images/woman.png" alt="woman">
       </div>
@@ -33,6 +39,33 @@
 </script>
 
 <style scoped lang="scss">
+  .period-anim {
+    &-enter-to {
+      opacity: 0;
+    }
+
+    &-enter-active {
+      animation-delay: 500ms;
+      animation-name: fadeIn;
+      animation-duration: 1s;
+    }
+  }
+
+  .title-anim {
+    &-enter-active {
+      animation-name: fadeInDown;
+      animation-duration: 1s;
+    }
+  }
+
+  .btn-anim {
+    &-enter-active {
+      animation-delay: 1s;
+      animation-name: pulse;
+      animation-duration: 1s;
+    }
+  }
+
   .section-main {
     background-image: url('@/assets/images/main-bg.jpg');
     background-size: cover;
@@ -122,7 +155,7 @@
     font-size: 30px;
     line-height: 1.2;
     color: var(--color-white);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     column-gap: 16px;
 
@@ -154,7 +187,7 @@
   }
 
   .title {
-    transform: translateX(-0.08em);
+    margin-left: -0.08em;
     font-size: 140px;
     font-weight: 700;
     font-family: var(--font-druk);
