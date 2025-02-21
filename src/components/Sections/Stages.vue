@@ -3,8 +3,10 @@
     <div class="wrapper">
       <div class="section-stages__wrap">
         <div class="section-stages__title title">
-          <span class="title__row1">3</span>
-          <span class="title__row2">этапа</span>
+          <div ref="titleRef" :class="{ 'title-anim-start': !titleAnimated, 'title-anim-active': titleAnimated, }">
+            <span class="title__row1">3</span>
+            <span class="title__row2">этапа</span>
+          </div>
         </div>
         <div class="section-stages__content">
           <ContentItem
@@ -49,12 +51,36 @@
   import Button from '@/components/Base/Button.vue';
   import ContentItem from '@/components/Stages/ContentItem.vue';
   import useConfig from '@/composables/useConfig';
+  import useIntersect from '@/composables/useIntersect';
+  import { ref } from 'vue';
 
   const config = useConfig();
+
+  const titleRef = ref(null);
+  const titleAnimated = ref(false);
+
+  useIntersect(
+    titleRef,
+    () => titleAnimated.value = true,
+    () => {},
+    { threshold: 1 },
+  );
 </script>
 
 <style scoped lang="scss">
+  .title-anim {
+    &-start {
+      opacity: 0;
+    }
+
+    &-active {
+      animation-name: flipInX;
+      animation-duration: 1s;
+    }
+  }
+
   .section-stages {
+    overflow: hidden;
     padding-top: 100px;
     padding-bottom: 180px;
 

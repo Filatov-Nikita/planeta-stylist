@@ -1,5 +1,9 @@
 <template>
-  <article class="content-item">
+  <article
+    class="content-item"
+    ref="stageRef"
+    :class="{ 'stage-anim-start': !stageAnimated, 'stage-anim-active': stageAnimated, }"
+  >
     <div class="content-item__header">
       <p class="content-item__caption">{{ caption }}</p>
       <div class="content-item__title-wrap">
@@ -14,6 +18,9 @@
 </template>
 
 <script setup>
+  import useIntersect from '@/composables/useIntersect';
+  import { ref } from 'vue';
+
   defineProps({
     caption: {
       required: true,
@@ -28,9 +35,30 @@
       type: String,
     },
   });
+
+  const stageRef = ref(null);
+  const stageAnimated = ref(false);
+
+  useIntersect(
+    stageRef,
+    () => stageAnimated.value = true,
+    () => {},
+    { threshold: 0.5 },
+  );
 </script>
 
 <style scoped lang="scss">
+  .stage-anim {
+    &-start {
+      opacity: 0;
+    }
+
+    &-active {
+      animation-name: fadeInRight;
+      animation-duration: 500ms;
+    }
+  }
+
   .content-item {
     @include sm {
       font-size: 16px;
