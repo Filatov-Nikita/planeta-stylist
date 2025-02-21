@@ -11,7 +11,11 @@
     <Swiper
       :slidesPerView="1"
       :spaceBetween="20"
-      :modules="[ Navigation ]"
+      :modules="[ Navigation, Autoplay ]"
+      :autoplay="{
+          delay: 2000,
+          disableOnInteraction: true,
+      }"
       :navigation="{
         disabledClass: 'list-btn-nav--disabled',
         prevEl: '.list-btn-nav--left',
@@ -41,7 +45,7 @@
   import ListItem from './ListItem.vue';
   import IconArrowLeft from '@/components/Icons/IconArrowLeft.vue';
   import IconArrowRight from '@/components/Icons/IconArrowRight.vue';
-  import { Navigation } from 'swiper/modules';
+  import { Navigation, Autoplay } from 'swiper/modules';
 
   defineProps({
     items: {
