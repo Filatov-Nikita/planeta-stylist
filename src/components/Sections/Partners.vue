@@ -1,5 +1,10 @@
 <template>
-  <section id="partners" class="section-partners">
+  <section
+    id="partners"
+    class="section-partners"
+    ref="sectionRef"
+    :class="{ 'section-animated-start': !animted, 'section-animated-active': animted }"
+  >
     <div class="wrapper">
       <h2 class="h2 h2--primary section-partners__title">Партнеры</h2>
       <Swiper
@@ -71,7 +76,9 @@
 </template>
 
 <script setup>
+  import useIntersect from '@/composables/useIntersect';
   import { Autoplay } from 'swiper/modules';
+  import { ref } from 'vue';
 
   const items1 = [
     '/images/partners/row1/1_brusnika.svg?v=1',
@@ -94,9 +101,31 @@
     '/images/partners/row2/7_charuel.svg?v=1',
     '/images/partners/row2/8_glassman.svg?v=1',
   ];
+
+  const sectionRef = ref(null);
+  const animted = ref(false);
+
+  useIntersect(
+    sectionRef,
+    () => animted.value = true,
+    () => {},
+    { threshold: 1, once: true }
+  );
+
 </script>
 
 <style scoped lang="scss">
+  .section-animated {
+    &-start {
+      opacity: 0;
+    }
+
+    &-active {
+      animation-name: fadeIn;
+      animation-duration: 1.5s;
+    }
+  }
+
   .section-partners {
     padding-top: 180px;
 
