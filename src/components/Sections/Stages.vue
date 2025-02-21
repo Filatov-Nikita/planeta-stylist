@@ -63,7 +63,7 @@
     titleRef,
     () => titleAnimated.value = true,
     () => {},
-    { threshold: 1 },
+    { threshold: 1, once: true },
   );
 </script>
 

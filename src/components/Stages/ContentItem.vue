@@ -43,7 +43,7 @@
     stageRef,
     () => stageAnimated.value = true,
     () => {},
-    { threshold: 0.5 },
+    { threshold: 0.5, once: true },
   );
 </script>
 
