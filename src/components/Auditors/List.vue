@@ -1,5 +1,10 @@
 <template>
-  <div class="auditors-list" v-if="grid.md">
+  <div
+    class="auditors-list"
+    :class="{ 'section-animated-start': !sectionAnimted, 'section-animated-active': sectionAnimted }"
+    ref="sectionRef"
+    v-if="grid.md"
+  >
     <ListItem
       class="auditors-list__item"
       v-for="item in items"
@@ -12,6 +17,11 @@
     v-else
     :spaceBetween="20"
     :slidesPerView="1.25"
+    :modules="[Autoplay]"
+    :autoplay="{
+      spped: 2000,
+      disableOnInteraction: true,
+    }"
   >
     <SwiperSlide
       v-for="item in items"
@@ -33,8 +43,22 @@
   import Img3 from '@/assets/images/auditors/3.jpg';
   import Img4 from '@/assets/images/auditors/4.jpg';
   import useGrid from '@/composables/useGrid';
+  import useIntersect from '@/composables/useIntersect';
+  import { Autoplay } from 'swiper/modules';
 
   const grid = useGrid();
+
+  const sectionRef = ref(null);
+  const sectionAnimted = ref(false);
+
+  useIntersect(
+    sectionRef,
+    () => {
+      sectionAnimted.value = true;
+    },
+    () => {},
+    { once: true, threshold: 0.1 },
+  );
 
   const items = ref([
     {
@@ -76,6 +100,17 @@
 </script>
 
 <style scoped lang="scss">
+  .section-animated {
+    &-start {
+      opacity: 0;
+    }
+
+    &-active {
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+  }
+
   .auditors-list {
     display: flex;
     flex-wrap: wrap;
