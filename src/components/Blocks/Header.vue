@@ -11,12 +11,12 @@
       <NavScreen :showed="showedMenu" @close="showedMenu = false" />
 
       <div class="nav">
-        <a class="nav-link" href="#stages">Этапы</a>
-        <a class="nav-link" href="#gifts">Призы</a>
-        <a class="nav-link" href="#members">Участники</a>
-        <a class="nav-link" href="#partners">Партнеры</a>
-        <a class="nav-link" href="#auditors">Жюри</a>
-        <a class="nav-link" href="#faq">Вопросы и ответы</a>
+        <a class="nav-link" href="#stages" @click.prevent="scroll">Этапы</a>
+        <a class="nav-link" href="#gifts" @click.prevent="scroll">Призы</a>
+        <a class="nav-link" href="#members" @click.prevent="scroll">Участники</a>
+        <a class="nav-link" href="#partners" @click.prevent="scroll">Партнеры</a>
+        <a class="nav-link" href="#auditors" @click.prevent="scroll">Жюри</a>
+        <a class="nav-link" href="#faq" @click.prevent="scroll">Вопросы и ответы</a>
       </div>
     </div>
   </header>
@@ -28,6 +28,14 @@
   import { ref } from 'vue';
 
   const showedMenu = ref(false);
+
+  function scroll(e) {
+    const id = e.target.getAttribute('href');
+    if(!id) return;
+    const el = document.querySelector(id);
+    if(!el) return;
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
 </script>
 
 <style scoped lang="scss">

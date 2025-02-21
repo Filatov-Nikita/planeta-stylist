@@ -10,23 +10,23 @@
               </button>
             </div>
             <div class="nav">
-              <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#stages">Этапы</a>
+              <div class="nav-wrap">
+                <a class="nav-link" href="#stages" @click.prevent="scroll">Этапы</a>
               </div>
-              <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#gifts">Призы</a>
+              <div class="nav-wrap">
+                <a class="nav-link" href="#gifts" @click.prevent="scroll">Призы</a>
               </div>
-              <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#members">Участники</a>
+              <div class="nav-wrap">
+                <a class="nav-link" href="#members" @click.prevent="scroll">Участники</a>
               </div>
-              <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#partners">Партнеры</a>
+              <div class="nav-wrap">
+                <a class="nav-link" href="#partners" @click.prevent="scroll">Партнеры</a>
               </div>
-              <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#auditors">Жюри</a>
+              <div class="nav-wrap">
+                <a class="nav-link" href="#auditors" @click.prevent="scroll">Жюри</a>
               </div>
-              <div class="nav-wrap" @click="$emit('close')">
-                <a class="nav-link" href="#faq">Вопросы и ответы</a>
+              <div class="nav-wrap">
+                <a class="nav-link" href="#faq" @click.prevent="scroll">Вопросы и ответы</a>
               </div>
             </div>
           </div>
@@ -46,7 +46,16 @@
     },
   });
 
-  defineEmits([ 'close' ]);
+  const emit = defineEmits([ 'close' ]);
+
+  function scroll(e) {
+    const id = e.target.getAttribute('href');
+    if(!id) return;
+    const el = document.querySelector(id);
+    if(!el) return;
+    el.scrollIntoView({ behavior: 'smooth' });
+    emit('close');
+  }
 </script>
 
 <style scoped lang="scss">
