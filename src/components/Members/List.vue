@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="slider">
     <div class="arrows">
       <button class="list-btn-nav list-btn-nav--left">
         <IconArrowLeft class="fill-current" />
@@ -31,6 +31,7 @@
           spaceBetween: 40,
         },
       }"
+      @swiper="swiper = $event"
     >
       <SwiperSlide
         v-for="item in items"
@@ -45,7 +46,9 @@
   import ListItem from './ListItem.vue';
   import IconArrowLeft from '@/components/Icons/IconArrowLeft.vue';
   import IconArrowRight from '@/components/Icons/IconArrowRight.vue';
+  import useIntersect from '@/composables/useIntersect';
   import { Navigation, Autoplay } from 'swiper/modules';
+  import { onMounted, ref } from 'vue';
 
   defineProps({
     items: {
@@ -53,6 +56,26 @@
       type: Array,
     },
   });
+
+  const slider = ref(null);
+  const swiper = ref(null);
+
+  onMounted(() => {
+    if(swiper.value && swiper.value.autoplay) {
+      swiper.value.autoplay.stop();
+    }
+  });
+
+  useIntersect(
+    slider,
+    () => {
+      if(swiper.value && swiper.value.autoplay) {
+        swiper.value.autoplay.start();
+      }
+    },
+    () => {},
+    { once: true },
+  );
 </script>
 
 <style scoped lang="scss">
