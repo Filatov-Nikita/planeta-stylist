@@ -20,9 +20,10 @@
           <p class="section-main__text">
             Главный приз – обучение в style community school
           </p>
-          <Transition appear name="btn-anim">
+          <p class="section-main__finish">Регистрация завершена</p>
+          <!-- <Transition appear name="btn-anim">
             <Button tag="a" :href="config.formHref" target="_blank">Принять участие</Button>
-          </Transition>
+          </Transition> -->
         </div>
         <img class="woman" width="1026" height="1074" src="@/assets/images/woman.png" alt="woman">
       </div>
@@ -70,6 +71,27 @@
     background-image: url('@/assets/images/main-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    &__finish {
+      display: inline-block;
+      font-family: var(--font-druk);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.25;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--color-primary);
+      background-color: var(--color-dark);
+
+      @include md {
+        font-size: 16px;
+      }
+
+      @include md {
+        font-size: 14px;
+      }
+    }
 
     &__wrap {
       position: relative;

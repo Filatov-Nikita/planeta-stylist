@@ -22,7 +22,7 @@
             <p class="section-gifts__caption">Подарочные сертификаты на&nbsp;сумму от&nbsp;10&nbsp;000 ₽</p>
           </div>
         </div>
-        <Button class="section-gifts__action" tag="a" :href="config.formHref" target="_blank">Хочу участвовать</Button>
+        <!-- <Button class="section-gifts__action" tag="a" :href="config.formHref" target="_blank">Хочу участвовать</Button> -->
       </div>
       <img class="woman" width="884" height="1218" src="@/assets/images/woman2.png" alt="woman">
     </div>
@@ -94,11 +94,11 @@
 
     &__wrap {
       padding-top: 60px;
-      padding-bottom: 80px;
+      padding-bottom: 180px;
 
       @include md {
         padding-top: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 120px;
       }
 
       @include xs {
