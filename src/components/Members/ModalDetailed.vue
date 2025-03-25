@@ -33,6 +33,12 @@
             <SwiperSlide key="video">
               <video :src="item.video" controls></video>
             </SwiperSlide>
+            <SwiperSlide v-if="item.video2" key="video2">
+              <video :src="item.video2" controls></video>
+            </SwiperSlide>
+            <SwiperSlide v-if="item.video3" key="video3">
+              <video :src="item.video3" controls></video>
+            </SwiperSlide>
           </Swiper>
         </div>
         <div class="text-wrap">

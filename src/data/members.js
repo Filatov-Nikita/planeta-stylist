@@ -17,6 +17,7 @@ export default function() {
       name: 'Вероника Карликова',
       photo: '/members/2_вероника_карликова/preview.jpg',
       video: '/members/2_вероника_карликова/video.mp4',
+      video2: '/members/2_вероника_карликова/video2.mp4',
       images: [
         '/members/2_вероника_карликова/2.jpg',
         '/members/2_вероника_карликова/3.jpg',
@@ -53,6 +54,8 @@ export default function() {
       name: 'Лилия Алиева',
       photo: '/members/5_лилия_алиева/preview.jpg',
       video: '/members/5_лилия_алиева/video.mp4',
+      video2: '/members/5_лилия_алиева/video2.mp4',
+      video3: '/members/5_лилия_алиева/video3.mp4',
       images: [
         '/members/5_лилия_алиева/2.jpg',
         '/members/5_лилия_алиева/3.jpg',
@@ -66,6 +69,8 @@ export default function() {
       name: 'Наталья Покидко',
       photo: '/members/7_наталья_покидко/preview.jpg',
       video: '/members/7_наталья_покидко/video.mp4',
+      video2: '/members/7_наталья_покидко/video2.mp4',
+      video3: '/members/7_наталья_покидко/video3.mp4',
       images: [
         '/members/7_наталья_покидко/2.jpg',
         '/members/7_наталья_покидко/3.jpg',
@@ -79,6 +84,8 @@ export default function() {
       name: 'Надежда Белова',
       photo: '/members/8_надежда_белова/preview.jpg',
       video: '/members/8_надежда_белова/video.mp4',
+      video2: '/members/8_надежда_белова/video2.mp4',
+      video3: '/members/8_надежда_белова/video3.mp4',
       images: [
         '/members/8_надежда_белова/2.jpg',
         '/members/8_надежда_белова/3.jpg',
@@ -162,6 +169,8 @@ export default function() {
       name: 'Сергей Бахтин',
       photo: '/members/15_сергей_бахтин/preview.jpg',
       video: '/members/15_сергей_бахтин/video.mp4',
+      video2: '/members/15_сергей_бахтин/video2.mp4',
+      video3: '/members/15_сергей_бахтин/video3.mp4',
       images: [
         '/members/15_сергей_бахтин/2.jpg',
         '/members/15_сергей_бахтин/3.jpg',
@@ -198,6 +207,8 @@ export default function() {
       name: 'Анна Гейнрих',
       photo: '/members/18_анна_гейнрих/preview.jpg',
       video: '/members/18_анна_гейнрих/video.mp4',
+      video2: '/members/18_анна_гейнрих/video2.mp4',
+      video3: '/members/18_анна_гейнрих/video3.mp4',
       images: [
         '/members/18_анна_гейнрих/2.jpg',
         '/members/18_анна_гейнрих/3.jpg',
@@ -248,6 +259,8 @@ export default function() {
       name: 'Алексей Губин',
       photo: '/members/22_алексей_губин/preview.jpg',
       video: '/members/22_алексей_губин/video.mp4',
+      video2: '/members/22_алексей_губин/video2.mp4',
+      video3: '/members/22_алексей_губин/video3.mp4',
       images: [
         '/members/22_алексей_губин/2.jpg',
         '/members/22_алексей_губин/3.jpg',
@@ -261,6 +274,8 @@ export default function() {
       name: 'Полина Бородкина',
       photo: '/members/23_полина_бородкина/preview.jpg',
       video: '/members/23_полина_бородкина/video.mp4',
+      video2: '/members/23_полина_бородкина/video2.mp4',
+      video3: '/members/23_полина_бородкина/video3.mp4',
       images: [
         '/members/23_полина_бородкина/2.jpg',
         '/members/23_полина_бородкина/3.jpg',
@@ -323,6 +338,8 @@ export default function() {
       name: 'Анфиса Иванова',
       photo: '/members/28_анфиса_иванова/preview.jpg',
       video: '/members/28_анфиса_иванова/video.mp4',
+      video2: '/members/28_анфиса_иванова/video2.mp4',
+      video3: '/members/28_анфиса_иванова/video3.mp4',
       images: [
         '/members/28_анфиса_иванова/2.jpg',
         '/members/28_анфиса_иванова/3.jpg',
@@ -334,6 +351,8 @@ export default function() {
       name: 'Светлана Котова',
       photo: '/members/29_светлана_котова/preview.jpg',
       video: '/members/29_светлана_котова/video.mp4',
+      video2: '/members/29_светлана_котова/video2.mp4',
+      video3: '/members/29_светлана_котова/video3.mp4',
       images: [
         '/members/29_светлана_котова/2.jpg',
         '/members/29_светлана_котова/3.jpg',
@@ -358,6 +377,8 @@ export default function() {
       name: 'Сусанна Карнаухова',
       photo: '/members/31_сусанна_карнаухова/preview.jpg',
       video: '/members/31_сусанна_карнаухова/video.mp4',
+      video2: '/members/31_сусанна_карнаухова/video2.mp4',
+      video3: '/members/31_сусанна_карнаухова/video3.mp4',
       images: [
         '/members/31_сусанна_карнаухова/2.jpg',
         '/members/31_сусанна_карнаухова/3.jpg',
@@ -539,6 +560,7 @@ export default function() {
       name: 'Елена Рогова',
       photo: '/members/46_елена_рогова/preview.jpg',
       video: '/members/46_елена_рогова/video.mp4',
+      video2: '/members/46_елена_рогова/video2.mp4',
       images: [
         '/members/46_елена_рогова/2.jpg',
         '/members/46_елена_рогова/3.jpg',
