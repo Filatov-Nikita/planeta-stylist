@@ -4,6 +4,8 @@ export default function() {
       name: 'Оксана Мамедова',
       photo: '/members/1_оксана_мамедова/preview.jpg',
       video: '/members/1_оксана_мамедова/video.mp4',
+      video2: '/members/1_оксана_мамедова/video2.mp4',
+      video3: '/members/1_оксана_мамедова/video3.mp4',
       images: [
         '/members/1_оксана_мамедова/2.jpg',
         '/members/1_оксана_мамедова/3.jpg',
@@ -18,6 +20,7 @@ export default function() {
       photo: '/members/2_вероника_карликова/preview.jpg',
       video: '/members/2_вероника_карликова/video.mp4',
       video2: '/members/2_вероника_карликова/video2.mp4',
+      video3: '/members/2_вероника_карликова/video3.mp4',
       images: [
         '/members/2_вероника_карликова/2.jpg',
         '/members/2_вероника_карликова/3.jpg',
@@ -110,6 +113,8 @@ export default function() {
       name: 'Юлия Сазонцева',
       photo: '/members/10_юлия_сазонцева/preview.jpg',
       video: '/members/10_юлия_сазонцева/video.mp4',
+      video2: '/members/10_юлия_сазонцева/video2.mp4',
+      video3: '/members/10_юлия_сазонцева/video3.mp4',
       images: [
         '/members/10_юлия_сазонцева/2.jpg',
         '/members/10_юлия_сазонцева/3.jpg',
@@ -136,6 +141,8 @@ export default function() {
       name: 'Мария Журавлева',
       photo: '/members/12_мария_журавлева/preview.jpg',
       video: '/members/12_мария_журавлева/video.mp4',
+      video2: '/members/12_мария_журавлева/video2.mp4',
+      video3: '/members/12_мария_журавлева/video3.mp4',
       images: [
         '/members/12_мария_журавлева/preview.jpg',
       ],
@@ -184,6 +191,8 @@ export default function() {
       name: 'Виктория Павлова',
       photo: '/members/16_виктория_павлова/preview.jpg',
       video: '/members/16_виктория_павлова/video.mp4',
+      video2: '/members/16_виктория_павлова/video2.mp4',
+      video3: '/members/16_виктория_павлова/video3.mp4',
       images: [
         '/members/16_виктория_павлова/2.jpg',
         '/members/16_виктория_павлова/3.jpg',
@@ -197,6 +206,8 @@ export default function() {
       name: 'Анна Шипковская',
       photo: '/members/17_анна_шипковская/preview.jpg',
       video: '/members/17_анна_шипковская/video.mp4',
+      video2: '/members/17_анна_шипковская/video2.mp4',
+      video3: '/members/17_анна_шипковская/video3.mp4',
       images: [
         '/members/17_анна_шипковская/2.jpg',
       ],
@@ -222,6 +233,8 @@ export default function() {
       name: 'Инга Сизых',
       photo: '/members/19_инга_сизых/preview.jpg',
       video: '/members/19_инга_сизых/video.mp4',
+      video2: '/members/19_инга_сизых/video2.mp4',
+      video3: '/members/19_инга_сизых/video3.mp4',
       images: [
         '/members/19_инга_сизых/2.jpg',
         '/members/19_инга_сизых/3.jpg',
@@ -235,6 +248,8 @@ export default function() {
       name: 'Елена Тихонова',
       photo: '/members/20_елена_тихонова/preview.jpg',
       video: '/members/20_елена_тихонова/video.mp4',
+      video2: '/members/20_елена_тихонова/video2.mp4',
+      video3: '/members/20_елена_тихонова/video3.mp4',
       images: [
         '/members/20_елена_тихонова/2.jpg',
         '/members/20_елена_тихонова/3.jpg',
@@ -247,6 +262,8 @@ export default function() {
       name: 'Екатерина Ананенко',
       photo: '/members/21_екатерина_ананенко/preview.jpg',
       video: '/members/21_екатерина_ананенко/video.mp4',
+      video2: '/members/21_екатерина_ананенко/video2.mp4',
+      video3: '/members/21_екатерина_ананенко/video3.mp4',
       images: [
         '/members/21_екатерина_ананенко/2.jpg',
         '/members/21_екатерина_ананенко/3.jpg',
@@ -289,6 +306,8 @@ export default function() {
       name: 'Юлия Логвиненко',
       photo: '/members/24_юлия_логвиненко/preview.jpg',
       video: '/members/24_юлия_логвиненко/video.mp4',
+      video2: '/members/24_юлия_логвиненко/video2.mp4',
+      video3: '/members/24_юлия_логвиненко/video3.mp4',
       images: [
         '/members/24_юлия_логвиненко/2.jpg',
         '/members/24_юлия_логвиненко/3.jpg',
@@ -302,6 +321,8 @@ export default function() {
       name: 'Яна Шистко',
       photo: '/members/25_яна_шистко/preview.jpg',
       video: '/members/25_яна_шистко/video.mp4',
+      video2: '/members/25_яна_шистко/video2.mp4',
+      video3: '/members/25_яна_шистко/video3.mp4',
       images: [
         '/members/25_яна_шистко/2.jpg',
         '/members/25_яна_шистко/3.jpg',
@@ -315,6 +336,8 @@ export default function() {
       name: 'Ирина Нечаева',
       photo: '/members/26_ирина_нечаева/preview.jpg',
       video: '/members/26_ирина_нечаева/video.mp4',
+      video2: '/members/26_ирина_нечаева/video2.mp4',
+      video3: '/members/26_ирина_нечаева/video3.mp4',
       images: [
         '/members/26_ирина_нечаева/preview.jpg',
       ],
@@ -325,6 +348,8 @@ export default function() {
       name: 'Ксения Кайгородова',
       photo: '/members/27_ксения_кайгородова/preview.jpg',
       video: '/members/27_ксения_кайгородова/video.mp4',
+      video2: '/members/27_ксения_кайгородова/video2.mp4',
+      video3: '/members/27_ксения_кайгородова/video3.mp4',
       images: [
         '/members/27_ксения_кайгородова/2.jpg',
         '/members/27_ксения_кайгородова/3.jpg',
@@ -392,6 +417,8 @@ export default function() {
       name: 'Елена Павлова',
       photo: '/members/32_елена_павлова/preview.jpg',
       video: '/members/32_елена_павлова/video.mp4',
+      video2: '/members/32_елена_павлова/video2.mp4',
+      video3: '/members/32_елена_павлова/video3.mp4',
       images: [
         '/members/32_елена_павлова/2.jpg',
         '/members/32_елена_павлова/3.jpg',
@@ -404,6 +431,8 @@ export default function() {
       name: 'Ксения Скороходова',
       photo: '/members/33_ксения_скороходова/preview.jpg',
       video: '/members/33_ксения_скороходова/video.mp4',
+      video2: '/members/33_ксения_скороходова/video2.mp4',
+      video3: '/members/33_ксения_скороходова/video3.mp4',
       images: [
         '/members/33_ксения_скороходова/2.jpg',
         '/members/33_ксения_скороходова/3.jpg',
@@ -428,6 +457,8 @@ export default function() {
       name: 'Юлия Савченко',
       photo: '/members/35_юлия_савченко/preview.jpg',
       video: '/members/35_юлия_савченко/video.mp4',
+      video2: '/members/35_юлия_савченко/video2.mp4',
+      video3: '/members/35_юлия_савченко/video3.mp4',
       images: [
         '/members/35_юлия_савченко/preview.jpg',
       ],
@@ -438,6 +469,8 @@ export default function() {
       name: 'Яна Костылева',
       photo: '/members/36_яна_костылева/preview.jpg',
       video: '/members/36_яна_костылева/video.mp4',
+      video2: '/members/36_яна_костылева/video2.mp4',
+      video3: '/members/36_яна_костылева/video3.mp4',
       images: [
         '/members/36_яна_костылева/2.jpg',
         '/members/36_яна_костылева/3.jpg',
@@ -449,6 +482,8 @@ export default function() {
       name: 'Анастасия Мордвинова',
       photo: '/members/37_анастасия_мордвинова/preview.jpg',
       video: '/members/37_анастасия_мордвинова/video.mp4',
+      video2: '/members/37_анастасия_мордвинова/video2.mp4',
+      video3: '/members/37_анастасия_мордвинова/video3.mp4',
       images: [
         '/members/37_анастасия_мордвинова/2.jpg',
         '/members/37_анастасия_мордвинова/3.jpg',
@@ -474,6 +509,8 @@ export default function() {
       name: 'Екатерина Третьякова',
       photo: '/members/39_екатерина_третьякова/preview.jpg',
       video: '/members/39_екатерина_третьякова/video.mp4',
+      video2: '/members/39_екатерина_третьякова/video2.mp4',
+      video3: '/members/39_екатерина_третьякова/video3.mp4',
       images: [
         '/members/39_екатерина_третьякова/2.jpg',
         '/members/39_екатерина_третьякова/3.jpg',
@@ -487,6 +524,8 @@ export default function() {
       name: 'Кристина Леонченко',
       photo: '/members/40_кристина_леонченко/preview.jpg',
       video: '/members/40_кристина_леонченко/video.mp4',
+      video2: '/members/40_кристина_леонченко/video2.mp4',
+      video3: '/members/40_кристина_леонченко/video3.mp4',
       images: [
         '/members/40_кристина_леонченко/preview.jpg',
       ],
@@ -497,6 +536,8 @@ export default function() {
       name: 'Лидия Принц',
       photo: '/members/41_лидия_принц/preview.jpg',
       video: '/members/41_лидия_принц/video.mp4',
+      video2: '/members/41_лидия_принц/video2.mp4',
+      video3: '/members/41_лидия_принц/video3.mp4',
       images: [
         '/members/41_лидия_принц/2.jpg',
         '/members/41_лидия_принц/3.jpg',
@@ -510,6 +551,8 @@ export default function() {
       name: 'Земфира Соколова',
       photo: '/members/42_земфира_соколова/preview.jpg',
       video: '/members/42_земфира_соколова/video.mp4',
+      video2: '/members/42_земфира_соколова/video2.mp4',
+      video3: '/members/42_земфира_соколова/video3.mp4',
       images: [
         '/members/42_земфира_соколова/2.jpg',
         '/members/42_земфира_соколова/3.jpg',
@@ -523,6 +566,8 @@ export default function() {
       name: 'Анна Колесник',
       photo: '/members/43_анна_колесник/preview.jpg',
       video: '/members/43_анна_колесник/video.mp4',
+      video2: '/members/43_анна_колесник/video2.mp4',
+      video3: '/members/43_анна_колесник/video3.mp4',
       images: [
         '/members/43_анна_колесник/2.jpg',
         '/members/43_анна_колесник/3.jpg',
@@ -548,6 +593,8 @@ export default function() {
       name: 'Кира Кеосиди',
       photo: '/members/45_кира_кеосиди/preview.jpg',
       video: '/members/45_кира_кеосиди/video.mp4',
+      video2: '/members/45_кира_кеосиди/video2.mp4',
+      video3: '/members/45_кира_кеосиди/video3.mp4',
       images: [
         '/members/45_кира_кеосиди/2.jpg',
         '/members/45_кира_кеосиди/3.jpg',
@@ -561,6 +608,7 @@ export default function() {
       photo: '/members/46_елена_рогова/preview.jpg',
       video: '/members/46_елена_рогова/video.mp4',
       video2: '/members/46_елена_рогова/video2.mp4',
+      video3: '/members/46_елена_рогова/video3.mp4',
       images: [
         '/members/46_елена_рогова/2.jpg',
         '/members/46_елена_рогова/3.jpg',
