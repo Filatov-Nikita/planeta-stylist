@@ -128,6 +128,8 @@ export default function() {
       name: 'Лиана Овчарова',
       photo: '/members/11_лиана_овчарова/preview.jpg',
       video: '/members/11_лиана_овчарова/video.mp4',
+      video2: '/members/11_лиана_овчарова/video2.mp4',
+      video3: '/members/11_лиана_овчарова/video3.mp4',
       images: [
         '/members/11_лиана_овчарова/2.jpg',
         '/members/11_лиана_овчарова/3.jpg',
@@ -163,6 +165,8 @@ export default function() {
       name: 'Владлена Медведева',
       photo: '/members/14_владлена_медведева/preview.jpg',
       video: '/members/14_владлена_медведева/video.mp4',
+      video2: '/members/14_владлена_медведева/video2.mp4',
+      video3: '/members/14_владлена_медведева/video3.mp4',
       images: [
         '/members/14_владлена_медведева/2.jpg',
         '/members/14_владлена_медведева/3.jpg',
@@ -444,6 +448,8 @@ export default function() {
       name: 'Екатерина Кулевцова',
       photo: '/members/34_екатерина_кулевцова/preview.jpg',
       video: '/members/34_екатерина_кулевцова/video.mp4',
+      video2: '/members/34_екатерина_кулевцова/video2.mp4',
+      video3: '/members/34_екатерина_кулевцова/video3.mp4',
       images: [
         '/members/34_екатерина_кулевцова/2.jpg',
         '/members/34_екатерина_кулевцова/3.jpg',
@@ -496,6 +502,8 @@ export default function() {
       name: 'Ксения Зыкова',
       photo: '/members/38_ксения_зыкова/preview.jpg',
       video: '/members/38_ксения_зыкова/video.mp4',
+      video2: '/members/38_ксения_зыкова/video2.mp4',
+      video3: '/members/38_ксения_зыкова/video3.mp4',
       images: [
         '/members/38_ксения_зыкова/2.jpg',
         '/members/38_ксения_зыкова/3.jpg',
@@ -581,6 +589,8 @@ export default function() {
       name: 'Дарья Рожкова',
       photo: '/members/44_дарья_рожкова/preview.jpg',
       video: '/members/44_дарья_рожкова/video.mp4',
+      video2: '/members/44_дарья_рожкова/video2.mp4',
+      video3: '/members/44_дарья_рожкова/video3.mp4',
       images: [
         '/members/44_дарья_рожкова/2.jpg',
         '/members/44_дарья_рожкова/3.jpg',
