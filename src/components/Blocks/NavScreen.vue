@@ -14,6 +14,9 @@
                 <a class="nav-link" href="#stages" @click.prevent="scroll">Этапы</a>
               </div>
               <div class="nav-wrap">
+                <a class="nav-link" href="#finalists" @click.prevent="scroll">Финалисты</a>
+              </div>
+              <div class="nav-wrap">
                 <a class="nav-link" href="#gifts" @click.prevent="scroll">Призы</a>
               </div>
               <div class="nav-wrap">

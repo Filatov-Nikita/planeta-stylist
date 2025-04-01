@@ -20,10 +20,13 @@
           <p class="section-main__text">
             Главный приз – обучение в style community school
           </p>
-          <p class="section-main__finish">Регистрация завершена</p>
+          <!-- <p class="section-main__finish">Регистрация завершена</p> -->
           <!-- <Transition appear name="btn-anim">
             <Button tag="a" :href="config.formHref" target="_blank">Принять участие</Button>
           </Transition> -->
+          <Transition appear name="btn-anim" @click="showFinalists">
+            <Button class="section-main__final">Посмотреть финалистов</Button>
+          </Transition>
         </div>
         <img class="woman" width="1026" height="1074" src="@/assets/images/woman.png" alt="woman">
       </div>
@@ -37,6 +40,12 @@
   import useConfig from '@/composables/useConfig';
 
   const config = useConfig();
+
+  function showFinalists() {
+    const el = document.querySelector('#finalists');
+    if(!el) return;
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
 </script>
 
 <style scoped lang="scss">
@@ -71,6 +80,12 @@
     background-image: url('@/assets/images/main-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    &__final {
+      @include sm {
+        font-size: 12px;
+      }
+    }
 
     &__finish {
       display: inline-block;

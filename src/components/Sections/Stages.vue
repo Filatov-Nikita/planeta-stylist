@@ -82,11 +82,9 @@
   .section-stages {
     overflow: hidden;
     padding-top: 100px;
-    padding-bottom: 180px;
 
     @include sm {
       padding-top: 40px;
-      padding-bottom: 70px;
     }
 
     &__wrap {

@@ -12,6 +12,7 @@
 
       <div class="nav">
         <a class="nav-link" href="#stages" @click.prevent="scroll">Этапы</a>
+        <a class="nav-link" href="#finalists" @click.prevent="scroll">Финалисты</a>
         <a class="nav-link" href="#gifts" @click.prevent="scroll">Призы</a>
         <a class="nav-link" href="#members" @click.prevent="scroll">Участники</a>
         <a class="nav-link" href="#partners" @click.prevent="scroll">Партнеры</a>
