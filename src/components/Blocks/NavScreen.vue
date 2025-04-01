@@ -75,7 +75,11 @@
   }
 
   .body {
-    padding-top: 30px;
+    padding-top: 50px;
+
+    @include lg {
+      padding-top: 30px;
+    }
   }
 
   .head {

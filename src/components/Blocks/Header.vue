@@ -48,7 +48,7 @@
       column-gap: 110px;
       row-gap: 16px;
 
-      @include lg {
+      @include xl {
         justify-content: space-between;
       }
     }
@@ -58,7 +58,7 @@
     display: none;
     cursor: pointer;
 
-    @include lg {
+    @include xl {
       display: block;
     }
   }
@@ -90,8 +90,9 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 50px;
+    row-gap: 16px;
 
-    @include lg {
+    @include xl {
       display: none;
     }
   }
