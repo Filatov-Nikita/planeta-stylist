@@ -1,10 +1,10 @@
 <template>
   <div ref="slider">
     <div class="arrows">
-      <button class="list-btn-nav list-btn-nav--left">
+      <button ref="prevBtnRef" class="list-btn-nav list-btn-nav--left">
         <IconArrowLeft class="fill-current" />
       </button>
-      <button class="list-btn-nav list-btn-nav--right">
+      <button ref="nextBtnRef" class="list-btn-nav list-btn-nav--right">
         <IconArrowRight class="fill-current" />
       </button>
     </div>
@@ -18,8 +18,8 @@
       }"
       :navigation="{
         disabledClass: 'list-btn-nav--disabled',
-        prevEl: '.list-btn-nav--left',
-        nextEl: '.list-btn-nav--right',
+        prevEl: prevBtnRef,
+        nextEl: nextBtnRef,
       }"
       :breakpoints="{
         701: {
@@ -59,6 +59,9 @@
 
   const slider = ref(null);
   const swiper = ref(null);
+
+  const prevBtnRef = ref(null);
+  const nextBtnRef = ref(null);
 
   onMounted(() => {
     if(swiper.value && swiper.value.autoplay) {
