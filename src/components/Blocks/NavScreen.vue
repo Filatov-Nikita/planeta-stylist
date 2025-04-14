@@ -11,6 +11,9 @@
             </div>
             <div class="nav">
               <div class="nav-wrap">
+                <a class="nav-link" href="#winner" @click.prevent="scroll">Победитель</a>
+              </div>
+              <div class="nav-wrap">
                 <a class="nav-link" href="#stages" @click.prevent="scroll">Этапы</a>
               </div>
               <div class="nav-wrap">

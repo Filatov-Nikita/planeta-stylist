@@ -1,5 +1,7 @@
 export const finalistIndexes = [30, 3, 19, 5, 2];
 
+export const winnerIndex = 19;
+
 export default function() {
   return [
     {

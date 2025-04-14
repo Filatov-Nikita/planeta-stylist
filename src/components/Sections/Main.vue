@@ -20,13 +20,13 @@
           <p class="section-main__text">
             Главный приз – обучение в style community school
           </p>
-          <!-- <p class="section-main__finish">Регистрация завершена</p> -->
+          <p class="section-main__finish">Регистрация завершена</p>
           <!-- <Transition appear name="btn-anim">
             <Button tag="a" :href="config.formHref" target="_blank">Принять участие</Button>
           </Transition> -->
-          <Transition appear name="btn-anim" @click="showFinalists">
-            <Button class="section-main__final">Посмотреть финалистов</Button>
-          </Transition>
+          <!-- <Transition appear name="btn-anim">
+            <Button class="section-main__final" @click="showFinalists">Посмотреть финалистов</Button>
+          </Transition> -->
         </div>
         <img class="woman" width="1026" height="1074" src="@/assets/images/woman.png" alt="woman">
       </div>
@@ -88,6 +88,7 @@
     }
 
     &__finish {
+      visibility: hidden;
       display: inline-block;
       font-family: var(--font-druk);
       font-weight: 700;
@@ -103,7 +104,8 @@
         font-size: 16px;
       }
 
-      @include md {
+      @include sm {
+        display: none;
         font-size: 14px;
       }
     }
